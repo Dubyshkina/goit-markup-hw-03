@@ -20,7 +20,8 @@
   --secondary-background-color: #f5f4fa;
   --footer-background-color: #2f303a;
   --header-border-color: #ECECEC;
-  --box-shadow-color: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  --box-shadow-color: rgba(0, 0, 0, 0.15);
+  --border-example-color:#EEEEEE;
 }
 h1,
 h2,
@@ -144,7 +145,6 @@ img{
   background-color: var(--footer-background-color);
 
   font-weight: 900;
-  font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
@@ -156,9 +156,10 @@ img{
   /* outline: 2px solid black; */
 }
 .hero-title{
+  font-size:44px;
+
   width: 696px;
   margin: 0 auto 30px;
-
 }
 .button {
   color: var(--primary-white-color);
@@ -180,7 +181,7 @@ img{
 
   border: transparent;
   border-radius: 4px;
-  box-shadow:var(--box-shadow-color);
+  box-shadow: 0px 4px 4px var(--box-shadow-color);
   
   padding: 10px 32px;
   margin:0 auto;
@@ -260,15 +261,12 @@ img{
 }
 
 /* Our team */
-/* между картинкой и заголовком непонятній зазор!!!! */
 .team {
   background-color: var(--secondary-background-color);
 }
 
 .team-list {
   list-style-type: none;
-
-  line-height: 1.88;
 
   display: flex;
   gap: 30px;
@@ -279,12 +277,10 @@ img{
   border-radius: 0px 0px 4px 4px;
   background-color: var(--primary-background-color);
 }
-.team-photo {
-  margin-bottom: 30px;
-}
-.team-card{
+.team-description{
   text-align: center;
   background-color: var(--primary-background-color);
+  padding-top: 30px;
   padding-bottom: 30px;
 }
 .team-list .title {
@@ -294,6 +290,9 @@ img{
   font-size: 16px;
   line-height: 1.19;
   
+}
+.team-text{
+  line-height: 1.19;
 }
 
 /* Footer */
@@ -339,6 +338,10 @@ img{
 .filter {
   list-style-type: none;
   margin-bottom: 50px;
+
+  display: flex;
+  gap:8px;
+  justify-content: center;
 }
 .filter .buttons {
   color: var(--title-text-color);
@@ -354,7 +357,6 @@ img{
   line-height: 1.63;
   text-align: center;
   letter-spacing: 0.03em;
-
 
   border: transparent;
   border-radius: 4px;
@@ -372,12 +374,27 @@ img{
 
 .example-list {
   list-style-type: none;
+  /* background-color: #2196f3; */
+
+  display:flex;
+  gap:30px;
+  flex-wrap: wrap;
+}
+
+.example-cards {
+  background-color: var(--primary-background-color);
+border: 1px solid var(--border-example-color);
+max-width: 370px;
 }
 .example-list .link {
   text-decoration: none;
 }
+.example-text{
+  padding:20px 24px;
+}
 .example-list .title {
   color: var(--title-text-color);
+  margin-bottom: 4px;
 
   font-weight: 700;
   font-size: 18px;
