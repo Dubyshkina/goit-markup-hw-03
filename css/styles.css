@@ -383,14 +383,14 @@ img{
 
 .example-cards {
   background-color: var(--primary-background-color);
-border: 1px solid var(--border-example-color);
-max-width: 370px;
 }
 .example-list .link {
   text-decoration: none;
 }
 .example-text{
   padding:20px 24px;
+  border: 1px solid var(--border-example-color);
+  border-top: none;
 }
 .example-list .title {
   color: var(--title-text-color);
@@ -405,5 +405,5 @@ max-width: 370px;
   color: var(--primary-text-color);
 
   font-size: 16px;
-  line-height: 1.88;
+  line-height: calc(30 / 16);
 }
